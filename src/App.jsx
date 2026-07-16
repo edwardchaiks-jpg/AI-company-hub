@@ -7,13 +7,25 @@ function App() {
       {/* 顶部导航栏 */}
       <header className="navbar">
         <div className="nav-container">
-          <h1 className="logo">AI-company-hub</h1>
-          <nav className="nav-links">
-            <a href="#overview">项目总览</a>
-            <a href="#production">内容生产</a>
-            <a href="#automation">流程自动化</a>
-            <a href="#team">AI员工分工</a>
-          </nav>
+<nav className="nav-links">
+  <a href="#overview" onClick={(e) => {
+    e.preventDefault();
+    document.querySelector('#overview').scrollIntoView({behavior: 'smooth'});
+  }}>项目总览</a>
+  <a href="#production" onClick={(e) => {
+    e.preventDefault();
+    document.querySelector('#production').scrollIntoView({behavior: 'smooth'});
+  }}>内容生产</a>
+  <a href="#automation" onClick={(e) => {
+    e.preventDefault();
+    document.querySelector('#automation').scrollIntoView({behavior: 'smooth'});
+  }}>流程自动化</a>
+  <a href="#team" onClick={(e) => {
+    e.preventDefault();
+    document.querySelector('#team').scrollIntoView({behavior: 'smooth'});
+  }}>AI员工分工</a>
+</nav>
+
         </div>
       </header>
 

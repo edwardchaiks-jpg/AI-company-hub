@@ -7,6 +7,7 @@ function App() {
       {/* 顶部导航栏 */}
       <header className="navbar">
         <div className="nav-container">
+          <h1 className="logo">AI-company-hub</h1>
 <nav className="nav-links">
   <a href="#overview" onClick={(e) => {
     e.preventDefault();

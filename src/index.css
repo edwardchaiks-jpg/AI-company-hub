@@ -32,6 +32,7 @@ body {
   min-height: 100vh;
 }
 
+/* 导航栏整体 */
 .navbar {
   background: #0f172a;
   color: white;
@@ -41,19 +42,64 @@ body {
   z-index: 100;
 }
 
+/* 导航容器：电脑端左右分开 */
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between; /* 左logo、右导航 */
   align-items: center;
+  width: 100%;
 }
 
+/* Logo文字样式（关键：让文字正常显示） */
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
+  color: white !important;
+  margin: 0;
+  display: block;
+  visibility: visible !important;
 }
+
+/* 导航链接组 */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* 手机/平板适配 */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column; /* 手机上下排 */
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center; /* 手机导航居中 */
+  }
+}
+
 
 .nav-links {
   display: flex;

@@ -66,17 +66,17 @@ function App() {
             <div className="card">
               <h3>📸 单据识别</h3>
               <p>支持发票、收据、订单、账单拍照上传，自动OCR识别文字与数字</p>
-              <button className="action-btn">上传单据</button>
+              <button className="action-btn" onClick={() => alert('📸 上传单据功能：下一步接入OCR识别，现在先演示交互~')}>上传单据</button>
             </div>
             <div className="card">
               <h3>📝 数据录入</h3>
               <p>自动归类客户、商品、金额、日期，同步生成台账</p>
-              <button className="action-btn">查看台账</button>
+              <button className="action-btn" onClick={() => alert('📝 查看台账功能：下一步接入数据，现在先演示交互~')}>查看台账</button>
             </div>
             <div className="card">
               <h3>📊 对账出表</h3>
               <p>自动核对收支、异常提醒，一键生成日报/周报/月报</p>
-              <button className="action-btn">生成报表</button>
+              <button className="action-btn" onClick={() => alert('📊 生成报表功能：下一步接入统计，现在先演示交互~')}>生成报表</button>
             </div>
           </div>
         </section>

@@ -142,14 +142,15 @@ html {
 /* 手机/平板适配 */
 @media (max-width: 768px) {
   .nav-container {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 1rem;
   }
 
   .nav-links {
     gap: 1rem;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   .main-content {

@@ -47,13 +47,44 @@ function App() {
         </section>
 
         <section id="automation" className="section">
-          <h2>商家办公自动化</h2>
-          <p>支持单据识别、数据核对、报表生成、客户跟进提醒，减少重复人工操作</p>
+          <h2>流程自动化</h2>
+          <p>从拍照到出报表全链路打通，减少90%重复人工操作</p>
+          <div className="card-grid">
+            <div className="card">
+              <h3>📸 单据识别</h3>
+              <p>支持发票、收据、订单、账单拍照上传，自动OCR识别文字与数字</p>
+            </div>
+            <div className="card">
+              <h3>📝 数据录入</h3>
+              <p>自动归类客户、商品、金额、日期，同步生成台账</p>
+            </div>
+            <div className="card">
+              <h3>📊 对账出表</h3>
+              <p>自动核对收支、异常提醒，一键生成日报/周报/月报</p>
+            </div>
+          </div>
         </section>
 
         <section id="team" className="section">
           <h2>10个AI员工最终分工</h2>
-          <p>涵盖内容生产、营销运营、客户服务、订单管理、财务对账全流程</p>
+          <div className="card-grid team-grid">
+            <div className="card">
+              <h4>内容生产组</h4>
+              <p>行业研究员、文案策划师、视觉设计师</p>
+            </div>
+            <div className="card">
+              <h4>运营推广组</h4>
+              <p>平台发布员、数据分析员、互动专员</p>
+            </div>
+            <div className="card">
+              <h4>业务处理组</h4>
+              <p>订单跟进员、客户管理员、财务对账员</p>
+            </div>
+            <div className="card">
+              <h4>技术支持组</h4>
+              <p>系统维护员、AI训练师</p>
+            </div>
+          </div>
         </section>
       </main>
 

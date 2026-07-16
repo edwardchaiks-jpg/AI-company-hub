@@ -5,6 +5,22 @@
   box-sizing: border-box;
 }
 
+/* 电脑端默认导航布局 */
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background: #f8fafc;
